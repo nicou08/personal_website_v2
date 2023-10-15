@@ -2,26 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+
+.curve {
+  width: 50px;
+  height: 50px;
+  border: solid 3px #57534e;
+  border-color: transparent transparent #57534e #57534e;
+  border-radius: 0px 0px 0px 25px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.curve2 {
+  width: 250px;
+  height: 50px;
+  border: solid 3px #57534e;
+  border-color: #57534e #57534e transparent transparent;
+  border-radius: 0px 25px 0px 0px;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.selfImage {
+  width: 352px; /* equivalent to w-80 in Tailwind */
+  height: 352px; /* equivalent to h-80 in Tailwind */
+  object-fit: cover;
+  object-position: center center;
 }
