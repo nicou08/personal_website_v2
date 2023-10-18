@@ -13,10 +13,26 @@
 
 .curve2 {
   width: 250px;
-  height: 50px;
+  height: 150px;
   border: solid 3px #57534e;
   border-color: #57534e #57534e transparent transparent;
   border-radius: 0px 25px 0px 0px;
+}
+
+.curve3 {
+  width: 450px;
+  height: 150px;
+  border: solid 3px #57534e;
+  border-color: transparent #57534e #57534e transparent;
+  border-radius: 0px 0px 25px 0px;
+}
+
+.curve4 {
+  width: 250px;
+  height: 150px;
+  border: solid 3px #57534e;
+  border-color: #57534e transparent transparent #57534e;
+  border-radius: 25px 0px 0px 0px;
 }
 
 .selfImage {
@@ -24,4 +40,32 @@
   height: 352px; /* equivalent to h-80 in Tailwind */
   object-fit: cover;
   object-position: center center;
+}
+
+.selfImageSmall {
+  width: 200px; /* equivalent to w-80 in Tailwind */
+  height: 200px; /* equivalent to h-80 in Tailwind */
+  object-fit: cover;
+  object-position: center center;
+}
+
+
+.location-icon {
+  position: relative;
+  width: 40px; /* Adjust the total width as needed */
+  height: 20px; /* Adjust the total height as needed */
+  background-color: #a8a; /* Replace "yourColor" with the desired arrow color */
+  clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
+}
+
+.location-icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 85%;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #f3f; /* Replace "yourColor" with the desired arrow color */
 }
